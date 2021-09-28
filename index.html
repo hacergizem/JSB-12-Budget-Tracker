@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <title>BudgeTo</title>
+</head>
+
+<body>
+  <div class="container">
+    <section class="content-container">
+      <div class="welcome-container" data-aos="fade-right">
+        <div> 
+          <img id="logo" data-aos="fade-right" src="SRC/logo.svg" alt="Logo" />
+          <p>Welcome, <span style="font-weight: bold">Gizoli</span></p>
+          <p class="tarih">25.08.1999</p>
+          <p style="font-weight: bold; text-transform: uppercase">Balance</p>
+          <p class="balance">12.820$</p>
+        </div>
+
+        <div class="home-container" data-aos="fade-left">
+          <img class="home" src="SRC/home.svg" alt="Home" />
+        </div>
+      </div>
+
+      <div class="form-container">
+        <div class="form">      
+            <select id="type" name="type">
+              <option value="incomes">Incomes</option>
+              <option value="expences">Expences</option>
+            </select>
+            <input type="text" id="fname" name="firstname" placeholder="Explanation" />
+            <input class="money" type="text" id="lname" name="lastname" placeholder="00,00" />
+            <input class="btn" type="submit" value="ADD" />
+        </div>
+      </div>
+    </section>
+
+    <section id="movements">
+
+      <div class="movement-left">
+        <div class="movement-title">List of Movements</div>
+
+        <div class="contents">
+          <div class="list border">
+              <!-- Before you start delete this side. -->
+            <div>
+              <span class="list-title"><b>Salary</b></span>
+              <span class="list-date">06 Jun 2021</span>
+            </div>
+            <div class="spending">2.000$</div>
+          </div>
+          <div class="list border">
+            <div>
+              <span class="list-title"><b>Salary</b></span>
+              <span class="list-date">06 Jun 2021</span>
+            </div>
+            <div class="spending">2.000$</div>
+          </div>
+          <div class="list border">
+            <div>
+              <span class="list-title"><b>Salary</b></span>
+              <span class="list-date">06 Jun 2021</span>
+            </div>
+            <div class="spending">2.000$</div>
+          </div>
+          <div class="list border">
+            <div>
+              <span class="list-title"><b>Salary</b></span>
+              <span class="list-date">06 Jun 2021</span>
+            </div>
+            <div class="spending">2.000$</div>
+          </div>
+          <div class="list border">
+            <div>
+              <span class="list-title"><b>Salary</b></span>
+              <span class="list-date">06 Jun 2021</span>
+            </div>
+            <div class="spending">2.000$</div>
+          </div>
+          <!-- Before you start delete this side. -->
+        </div>
+
+      </div>
+
+      <div class="movement-right" data-aos="fade-up-left">
+        <img id="man-photo" src="SRC/man.svg" alt="Man" />
+      </div>
+    </section>
+  </div>
+  <footer>
+    <div>
+      Tasarım :
+      <a style="text-decoration: none; color: white" href="https://github.com/YunusInoluk">Yunus</a>
+      HTML/CSS :
+      <a style="text-decoration: none; color: white" href="https://github.com/hacergizem">Gizem</a>
+    </div>
+  </footer>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+</html>
